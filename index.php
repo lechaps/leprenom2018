@@ -1,5 +1,4 @@
 <?php
-//SITE POUR FAIRE DEVINER LE PRENOM
 header('Content-Type: text/html; charset=UTF-8');
 require('./config/constants.php');
 ?>

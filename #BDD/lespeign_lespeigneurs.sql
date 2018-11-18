@@ -59,10 +59,7 @@ INSERT INTO `fils` (`id`, `long_id`, `titre`, `libelle`, `reponse`, `dtdebut`, `
 (17, 'bba3271ed3cdd670', 'Vous cherchez un prénom', 'Sorti le 20 décembre 2017', 'Ferdinand', '2017-10-18 12:40:59', '2017-10-18 12:42:26'),
 (18, 'edd59d486b3d1d7e', 'Vous cherchez un prénom', 'Je suis un ancien magazine people américain. Si je suis 5, je suis un hotel et dans ce cas je suis \"Vé\" selon Brel. Si j\'écris je suis une baronne. Si je suis 6, je suis je suis je suis...', 'George', '2017-10-18 12:42:26', '2017-10-20 13:37:08'),
 (19, '17272a0b6fc64f2b', 'Vous cherchez un prénom', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m0!4v1508496561311!6m8!1m7!1srWUflgYiRI78HwisxuEyYg!2m2!1d48.85762537417707!2d2.298923702230923!3f261.24048849356103!4f13.326209168929537!5f0.7820865974627469\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Sacha', '2017-10-20 13:37:08', '2017-10-20 21:11:55'),
-(20, 'd76f1111b02ca689', 'Vous cherchez un prénom', '59 00 N, 16 12 E; 51 06 26 N, 7 39 E; 53 04 N, 0 48 O; 41 17 N, 1 15 E; 46 25 N, 15 52 E; 35 12 N, 32 59 E', 'Anatole', '2017-10-20 21:11:55', NULL),
-(21, '20c534ece13e03d8', 'Vous cherchez un prénom', '', '', NULL, NULL),
-(22, 'affba3d127d0743f', 'Vous cherchez un prénom', '', '', NULL, NULL),
-(23, '7ee631c2163ac90a', 'Vous cherchez un prénom', '', '', NULL, NULL);
+(20, 'd76f1111b02ca689', 'Vous cherchez un prénom', '59 00 N, 16 12 E; 51 06 26 N, 7 39 E; 53 04 N, 0 48 O; 41 17 N, 1 15 E; 46 25 N, 15 52 E; 35 12 N, 32 59 E', 'Anatole', '2017-10-20 21:11:55', NULL);
 
 -- --------------------------------------------------------
 
@@ -479,27 +476,6 @@ CREATE TABLE `winner` (
   `pseudo` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Déchargement des données de la table `winner`
---
-
-INSERT INTO `winner` (`id`, `id_event`, `email`, `pseudo`) VALUES
-(1, 5, 'barbybulle@gmail.com', 'Babs'),
-(2, 68, 'david@penfold.fr', 'Tass'),
-(3, 74, 'david@penfold.fr', 'Tass'),
-(6, 108, 'maxibiker@hotmail.com', 'Doudou'),
-(7, 109, 'maxibiker@hotmail.com', 'Doudou'),
-(9, 158, 'maxibiker@hotmail.com', 'Doudou'),
-(11, 161, 'david@penfold.fr', 'Tass'),
-(12, 248, 'barbybulle@gmail.com', 'Babs'),
-(13, 255, 'barbybulle@gmail.com', 'Babs'),
-(14, 280, 'david@penfold.fr', 'Tass'),
-(15, 322, 'david@penfold.fr', 'Tass'),
-(16, 333, 'maxibiker@hotmail.com', 'Doudou'),
-(17, 355, 'maxibiker@hotmail.com', 'Doudou'),
-(18, 356, 'maxibiker@hotmail.com', 'Doudou'),
-(19, 362, 'maxibiker@hotmail.com', 'Doudou'),
-(20, 380, 'jutahl@hotmail.fr', 'Jutahl');
 
 --
 -- Index pour les tables déchargées
@@ -541,7 +517,7 @@ ALTER TABLE `fils_event`
 -- AUTO_INCREMENT pour la table `winner`
 --
 ALTER TABLE `winner`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;COMMIT;
+  MODIFY `id` int(1) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
